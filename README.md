@@ -7,12 +7,9 @@ This project consists on the creation of a Pentaho Data Integration transformati
 
 We have a list of Districts (Cities) of Portugal to geocode. This list is stored in a csv file and in each line, we have those Districts with other attributes such as the Ano (Year), the Entidade (Entity) and the Valor (Value).
 
-
-
 We wish to create a transformation using Google's geocoding service (http://maps.googleapis.com/maps/api/geocode/json?address=...&sensor=false) to obtain the coordinates of these districts. 
 Therefore, a JSON document will be obtained, the nodes of the document will be processed, and the information of interest is selected. 
 Next, we create a geometry and generate not only a table output but also a GIS file to represent the spatial information in PostGis.
-
 
 # Data Analysis
 
@@ -22,14 +19,4 @@ Relatively to the data of the Autonomous Regions, there is some data about the G
 
 The source of this data was provided by DGAI (Internal Administration of General Direction).
 
-The data is stored in a csv file and can be found here: http://centraldedados.pt/violencia_domestica/
-
-# Proposed Solution
-
-Here, it can be seen an overview of the result of the transformation created on Pentaho Data Integration.
-
-
-
-In the picture below it can be seen in the map the districts of Portugal that have domestic violence and if we click on a district, we can see more details about it.
-
-
+The data is stored in a csv file and can be found here: http://centraldedados.pt/violencia_domestica/.
